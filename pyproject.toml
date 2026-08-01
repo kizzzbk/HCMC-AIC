@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shotlab-student"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["scenedetect>=0.6.4,<0.8", "opencv-python>=4.8,<6"]
+
+[project.scripts]
+shotlab-student = "shotlab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

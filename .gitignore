@@ -1,0 +1,18 @@
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Bỏ qua các file cài đặt thư viện Python nội bộ
+*.egg-info/
+build/
+dist/
+
+# Bỏ qua dữ liệu video của bài Lab
+data/videos/*.mp4
+
+# Bỏ qua thư mục chứa bộ video 15 file của bạn
+*batch_15/
+*batch_15.zip
+
+# Bỏ qua toàn bộ ảnh keyframe và báo cáo đầu ra
+output/
