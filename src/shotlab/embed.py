@@ -69,6 +69,8 @@ def embed_keyframes(
             
             # Đẩy kết quả về CPU và lưu dưới dạng numpy array
             all_embeddings.append(features.cpu().numpy())
+        
+        print(f"Đã chạy xong  {i + batch_size}/{len(keyframes_to_process)} keyframes")
 
     # 5. Gom tất cả các lô lại thành 1 ma trận duy nhất và lưu lại
     embeddings_matrix = np.vstack(all_embeddings)
