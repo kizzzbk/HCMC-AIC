@@ -8,8 +8,8 @@ from .models import VideoInfo
 
 def probe_video(path: Path) -> VideoInfo:
     command = [
-        "ffprobe", "-v", "error", "-select_streams", "v:0", "-count_frames",
-        "-show_entries", "stream=avg_frame_rate,r_frame_rate,nb_frames,nb_read_frames,duration:format=duration",
+        "ffprobe", "-v", "error", "-select_streams", "v:0",
+        "-show_entries", "stream=avg_frame_rate,r_frame_rate,nb_frames,duration:format=duration",
         "-of", "json", str(path),
     ]
     payload = json.loads(subprocess.run(command, check=True, capture_output=True, text=True).stdout)

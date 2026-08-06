@@ -9,6 +9,7 @@ dist/
 
 # Bỏ qua dữ liệu video của bài Lab
 data/videos/*.mp4
+data/real_videos/
 
 # Bỏ qua thư mục chứa bộ video 15 file của bạn
 *batch_15/

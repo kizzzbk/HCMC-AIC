@@ -10,6 +10,7 @@ dependencies = ["scenedetect>=0.6.4,<0.8", "opencv-python>=4.8,<6"]
 
 [project.scripts]
 shotlab-student = "shotlab.cli:main"
+shotlab-embed = "shotlab.cli:embed_main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

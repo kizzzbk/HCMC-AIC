@@ -27,8 +27,8 @@ class TransNetV2Detector:
                 video_id=video.video_id,
                 method=self.name,
                 shot_id=i + 1,  # Hệ thống yêu cầu shot_id bắt đầu từ 1
-                start_frame=scene["start"],
-                end_frame=scene["end"],
+                start_frame=scene["start_frame"],
+                end_frame=scene["end_frame"],
                 fps=video.fps
             )
             shots.append(shot)
