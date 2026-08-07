@@ -2,7 +2,7 @@ from .models import Keyframe, Shot
 
 
 def select_frame_indices(
-    shot: Shot, long_shot_seconds: float = 12.0, sample_every_seconds: float = 8.0
+    shot: Shot, medium_shot_seconds: float = 4.0, long_shot_seconds: float = 2.0, sample_every_seconds: float = 8.0
 ) -> list[int]:
     """
     TODO 3: frame giữa + sampling bổ sung cho shot dài.
@@ -30,7 +30,12 @@ def select_frame_indices(
     indices = {mid}
 
     # 2. Nếu shot dài hơn ngưỡng long_shot_seconds, thực hiện lấy mẫu bổ sung định kỳ
-    if shot.duration > long_shot_seconds:
+    if shot.duration >= medium_shot_seconds and shot.duration < long_shot_seconds:
+        indices.add(shot.start_frame)
+        indices.add(shot.end_frame)
+
+    # 2. Nếu shot dài hơn ngưỡng long_shot_seconds, thực hiện lấy mẫu bổ sung định kỳ
+    elif shot.duration >= long_shot_seconds:
         step = max(1, int(sample_every_seconds * shot.fps))
         # Lấy mẫu bắt đầu từ nửa bước nhảy đầu tiên (start_frame + step // 2)
         start_point = shot.start_frame + step // 2

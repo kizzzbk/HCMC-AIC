@@ -65,8 +65,12 @@ def run_pipeline(
     primary_shots = [shot for video in videos for shot in cache[(primary, video.video_id)]]
     keyframes = make_keyframes(primary_shots, long_shot_seconds, sample_every_seconds)
     by_video = defaultdict(list)
+
+    print('Đang trích xuất Keyframe theo từng video_id ...')
     for frame in keyframes:
         by_video[frame.video_id].append(frame)
+
+    print('Đang trích xuất từng keyframe và lưu vào folder output/ ...')
     for video in videos:
         extract_keyframes(video.path, by_video[video.video_id], output_root)
     write_metadata(output_root, primary_shots, keyframes)
