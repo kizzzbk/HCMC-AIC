@@ -56,9 +56,9 @@ def probe_video(path: Path) -> VideoInfo:
         duration = frame_count / fps
 
     return VideoInfo(
-        stem=path.stem,
-        path=path.resolve(),
-        fps=fps,
-        frame_count=frame_count,
-        duration=duration
+        path.stem,
+        path.resolve(),
+        fps,
+        frame_count,
+        duration
     )
