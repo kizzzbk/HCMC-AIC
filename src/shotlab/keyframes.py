@@ -2,7 +2,7 @@ from .models import Keyframe, Shot
 
 
 def select_frame_indices(
-    shot: Shot, medium_shot_seconds: float = 4.0, long_shot_seconds: float = 8.0, sample_every_seconds: float = 2.0
+    shot: Shot, long_shot_seconds: float = 3.0, sample_every_seconds: float = 1.0
 ) -> list[int]:
     """
     TODO 3: frame giữa + sampling bổ sung cho shot dài.
@@ -27,15 +27,10 @@ def select_frame_indices(
     
     # 1. Luôn lấy frame ở chính giữa của shot
     mid = shot.start_frame + (shot.end_frame - shot.start_frame) // 2
-    indices = {mid}
+    indices = {shot.start_frame, mid, shot.end_frame}
 
     # 2. Nếu shot dài hơn ngưỡng long_shot_seconds, thực hiện lấy mẫu bổ sung định kỳ
-    if shot.duration >= medium_shot_seconds and shot.duration < long_shot_seconds:
-        indices.add(shot.start_frame)
-        indices.add(shot.end_frame)
-
-    # 2. Nếu shot dài hơn ngưỡng long_shot_seconds, thực hiện lấy mẫu bổ sung định kỳ
-    elif shot.duration >= long_shot_seconds:
+    if shot.duration >= long_shot_seconds:
         step = max(1, int(sample_every_seconds * shot.fps))
         # Lấy mẫu bắt đầu từ nửa bước nhảy đầu tiên (start_frame + step // 2)
         start_point = shot.start_frame + step // 2
@@ -49,7 +44,7 @@ def select_frame_indices(
     return sorted(list(valid_indices))
 
 
-def make_keyframes(shots: list[Shot], medium_shot_seconds, long_shot_seconds: float, sample_every_seconds: float) -> list[Keyframe]:
+def make_keyframes(shots: list[Shot], long_shot_seconds: float, sample_every_seconds: float) -> list[Keyframe]:
     """TODO 4: tạo ID/path ổn định và timestamp = frame_idx / fps.
     
     Input:
