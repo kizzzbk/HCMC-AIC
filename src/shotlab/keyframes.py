@@ -81,7 +81,7 @@ def make_keyframes(shots: list[Shot], long_shot_seconds: float, sample_every_sec
 
     for shot in shots:
         # Lấy danh sách chỉ số khung hình được chọn cho shot hiện tại
-        frame_indices = select_frame_indices(shot, medium_shot_seconds, long_shot_seconds, sample_every_seconds)
+        frame_indices = select_frame_indices(shot, long_shot_seconds, sample_every_seconds)
 
         for ordinal, frame_idx in enumerate(frame_indices):
             # 1. Tạo ID ổn định, chuẩn hóa độ dài để thuận tiện cho việc sắp xếp
