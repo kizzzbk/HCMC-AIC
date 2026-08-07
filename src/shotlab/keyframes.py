@@ -2,7 +2,7 @@ from .models import Keyframe, Shot
 
 
 def select_frame_indices(
-    shot: Shot, medium_shot_seconds: float = 4.0, long_shot_seconds: float = 2.0, sample_every_seconds: float = 8.0
+    shot: Shot, medium_shot_seconds: float = 4.0, long_shot_seconds: float = 8.0, sample_every_seconds: float = 2.0
 ) -> list[int]:
     """
     TODO 3: frame giữa + sampling bổ sung cho shot dài.
