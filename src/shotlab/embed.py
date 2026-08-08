@@ -81,6 +81,8 @@ def embed_keyframes(
             with torch.no_grad():
                 # Lấy đặc trưng ảnh từ mô hình
                 features = model.get_image_features(**inputs)
+                if hasattr(features, "pooler_output") and features.pooler_output is not None:
+                    features = features.pooler_output
                 
                 # Chuẩn hóa L2 cho các vector đặc trưng để tính Cosine Similarity nhanh bằng phép nhân ma trận
                 features = features / features.norm(p=2, dim=-1, keepdim=True)

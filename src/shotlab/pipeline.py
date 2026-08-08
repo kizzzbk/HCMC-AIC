@@ -7,7 +7,7 @@ from .extract import extract_keyframes
 from .keyframes import make_keyframes
 from .metadata import write_benchmark, write_metadata
 from .probe import probe_video
-from .deduplicate import deduplicate_by_histogram
+# from .deduplicate import deduplicate_by_histogram
 
 
 VIDEO_EXTENSIONS = {".mp4", ".mov", ".mkv", ".avi", ".webm", ".m4v"}
@@ -32,7 +32,7 @@ def run_pipeline(
     device: str,
     long_shot_seconds: float,
     sample_every_seconds: float,
-    hist_threshold: float = 0.95,
+    # hist_threshold: float = 0.95,
 ) -> None:
     if primary not in methods:
         raise ValueError("--primary phải nằm trong --methods")
@@ -77,7 +77,7 @@ def run_pipeline(
         extract_keyframes(video.path, by_video[video.video_id], output_root)
     write_metadata(output_root, primary_shots, keyframes)
     
-    print('Đang thực hiện lọc trùng lặp thô bằng Color Histogram (CPU)...')
-    deduplicate_by_histogram(output_root, threshold=hist_threshold)
+    # print('Đang thực hiện lọc trùng lặp thô bằng Color Histogram (CPU)...')
+    # deduplicate_by_histogram(output_root, threshold=hist_threshold)
     
     write_benchmark(output_root, benchmark)

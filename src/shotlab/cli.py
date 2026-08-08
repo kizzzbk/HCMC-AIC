@@ -15,7 +15,7 @@ def main() -> None:
     parser.add_argument("--device", choices=["auto", "cpu", "cuda", "mps"], default="auto")
     parser.add_argument("--long-shot-seconds", type=float, default=3.0)
     parser.add_argument("--sample-every-seconds", type=float, default=1.0)
-    parser.add_argument("--hist-threshold", type=float, default=0.95)
+    # parser.add_argument("--hist-threshold", type=float, default=0.95)
     
     values = vars(parser.parse_args())
     values["input_path"] = values.pop("input")
@@ -29,7 +29,7 @@ def embed_main() -> None:
     parser.add_argument("--model", type=str, default="google/siglip-base-patch16-224")
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--device", choices=["auto", "cpu", "cuda", "mps"], default="auto")
-    parser.add_argument("--cosine-threshold", type=float, default=0.90)
+    # parser.add_argument("--cosine-threshold", type=float, default=0.90)
     
     args = parser.parse_args()
     from .embed import embed_keyframes
@@ -40,10 +40,10 @@ def embed_main() -> None:
         device=args.device
     )
     
-    if args.cosine_threshold > 0.0:
-        print("Đang thực hiện lọc trùng lặp tinh bằng Cosine Similarity (SigLIP)...")
-        from .deduplicate import deduplicate_by_cosine
-        deduplicate_by_cosine(args.output, threshold=args.cosine_threshold)
+    # if args.cosine_threshold > 0.0:
+    #     print("Đang thực hiện lọc trùng lặp tinh bằng Cosine Similarity (SigLIP)...")
+    #     from .deduplicate import deduplicate_by_cosine
+    #     deduplicate_by_cosine(args.output, threshold=args.cosine_threshold)
 
 
 if __name__ == "__main__":
