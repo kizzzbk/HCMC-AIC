@@ -27,7 +27,7 @@ def select_frame_indices(
     
     # 1. Luôn lấy frame ở chính giữa của shot
     mid = shot.start_frame + (shot.end_frame - shot.start_frame) // 2
-    indices = {shot.start_frame, mid, shot.end_frame}
+    indices = {}
 
     # 2. Nếu shot dài hơn ngưỡng long_shot_seconds, thực hiện lấy mẫu bổ sung định kỳ
     if shot.duration >= long_shot_seconds:
@@ -36,6 +36,9 @@ def select_frame_indices(
         start_point = shot.start_frame + step // 2
         for f in range(start_point, shot.end_frame + 1, step):
             indices.add(f)
+    
+    else:
+        indices = {shot.start_frame, mid, shot.end_frame} 
 
     # 3. Đảm bảo tất cả các chỉ số khung hình đều nằm trong khoảng hợp lệ [start_frame, end_frame]
     valid_indices = {f for f in indices if shot.start_frame <= f <= shot.end_frame}
