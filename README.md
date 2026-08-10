@@ -74,3 +74,91 @@ Checkpoint `.pth` 30.5 MB nằm trong package bên thứ ba `transnetv2-pytorch=
 - Ghi rõ phần benchmark có loại trừ model load hay không.
 
 Synthetic videos chỉ dùng smoke test. Kết luận nên dựa trên video thật.
+
+## Hướng dẫn chạy YOLOv11 Object Detection
+
+Module `src.shotlab.extractors.yolo_detect` hỗ trợ nhận diện các vật thể từ một thư mục chứa ảnh (ví dụ: thư mục keyframes đã trích xuất) bằng mô hình **YOLOv11** và lưu thông tin bounding box, tên lớp (class name), ID lớp và độ tin cậy ra file JSON.
+
+### 1. Chạy qua Command Line (CLI)
+
+```bash
+python -m src.shotlab.extractors.yolo_detect \
+    --input-dir <duong_dan_thu_muc_anh> \
+    --output-json <duong_dan_file_json_dau_ra> \
+    [--model yolo11n.pt] \
+    [--conf 0.25] \
+    [--batch-size 16]
+```
+
+#### Các tham số:
+- `-i`, `--input-dir` *(Bắt buộc)*: Đường dẫn đến thư mục chứa ảnh cần nhận diện.
+- `-o`, `--output-json` *(Bắt buộc)*: Đường dẫn đến file JSON lưu kết quả.
+- `-m`, `--model`: Tên hoặc đường dẫn mô hình YOLOv11 (`yolo11n.pt`, `yolo11s.pt`, `yolo11m.pt`, `yolo11l.pt`, `yolo11x.pt` - mặc định: `yolo11n.pt`).
+- `-c`, `--conf`: Ngưỡng độ tin cậy confidence threshold (mặc định: `0.25`).
+- `--iou`: Ngưỡng NMS IoU threshold (mặc định: `0.45`).
+- `-b`, `--batch-size`: Kích thước batch khi suy luận ảnh (mặc định: `16`).
+- `-d`, `--device`: Thiết bị chạy (`cpu`, `cuda`, `0`, v.v.). Mặc định tự động chọn.
+- `-r`, `--recursive`: Cờ tìm kiếm ảnh đệ quy trong tất cả thư mục con.
+
+#### Ví dụ câu lệnh thực tế:
+
+```bash
+python -m src.shotlab.extractors.yolo_detect \
+    --input-dir test_yolo_img \
+    --output-json output_yolo/output.json \
+    --model yolo11n.pt \
+    --conf 0.25 \
+    --batch-size 16
+```
+
+### 2. Sử dụng trong mã nguồn Python (Python API)
+
+```python
+from src.shotlab.extractors.yolo_detect import detect_directory
+
+# Chạy nhận diện trên thư mục ảnh và ghi ra file JSON
+results = detect_directory(
+    input_dir="test_yolo_img",
+    output_json_path="output_yolo/output.json",
+    model_path="yolo11n.pt",
+    conf_threshold=0.25,
+    batch_size=16,
+    recursive=False
+)
+
+print(f"Đã xử lý tổng cộng {results['total_images']} ảnh.")
+```
+
+### 3. Cấu trúc file JSON kết quả đầu ra
+
+```json
+{
+  "model_path": "yolo11n.pt",
+  "conf_threshold": 0.25,
+  "iou_threshold": 0.45,
+  "total_images": 1,
+  "results": [
+    {
+      "image_name": "example.jpg",
+      "relative_path": "example.jpg",
+      "absolute_path": "/path/to/example.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.9125,
+          "bbox": [150.25, 80.1, 320.0, 450.5]
+        },
+        {
+          "class_id": 2,
+          "class_name": "car",
+          "confidence": 0.854,
+          "bbox": [400.0, 200.0, 650.5, 380.2]
+        }
+      ]
+    }
+  ]
+}
+```
+

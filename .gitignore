@@ -17,3 +17,8 @@ data/real_videos/
 
 # Bỏ qua toàn bộ ảnh keyframe và báo cáo đầu ra
 output/
+output_yolo/
+archive/
+archive.zip 
+test_yolo_img/
+yolo11n.pt
