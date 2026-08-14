@@ -10,7 +10,7 @@ from collections import defaultdict
 
 def embed_keyframes(
     output_root: Path,
-    model_name: str = "google/siglip-base-patch16-224",
+    model_name: str = "google/siglip2-base-patch16-naflex",
     batch_size: int = 32,
     device: str = "auto"
 ) -> None:
@@ -40,7 +40,7 @@ def embed_keyframes(
         return
 
     # 3. Tải mô hình SigLIP từ Hugging Face
-    print(f"Đang tải mô hình SigLIP: {model_name}...")
+    print(f"Đang tải mô hình SigLIP2: {model_name}...")
     processor = AutoProcessor.from_pretrained(model_name)
     model = AutoModel.from_pretrained(model_name).to(device)
     model.eval()
@@ -76,7 +76,7 @@ def embed_keyframes(
                 img = Image.open(img_path).convert("RGB")
                 batch_images.append(img)
 
-            # Chạy qua mô hình SigLIP
+            # Chạy qua mô hình SigLIP2
             inputs = processor(images=batch_images, return_tensors="pt").to(device)
             with torch.no_grad():
                 # Lấy đặc trưng ảnh từ mô hình
