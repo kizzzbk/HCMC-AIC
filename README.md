@@ -81,52 +81,53 @@ Module `src.shotlab.extractors.yolo_detect` hỗ trợ nhận diện các vật 
 
 ### 1. Chạy qua Command Line (CLI)
 
+#### Xử lý một thư mục ảnh duy nhất:
 ```bash
 python -m src.shotlab.extractors.yolo_detect \
-    --input-dir <duong_dan_thu_muc_anh> \
-    --output-json <duong_dan_file_json_dau_ra> \
-    [--model yolo11n.pt] \
-    [--conf 0.25] \
-    [--batch-size 16]
-```
-
-#### Các tham số:
-- `-i`, `--input-dir` *(Bắt buộc)*: Đường dẫn đến thư mục chứa ảnh cần nhận diện.
-- `-o`, `--output-json` *(Bắt buộc)*: Đường dẫn đến file JSON lưu kết quả.
-- `-m`, `--model`: Tên hoặc đường dẫn mô hình YOLOv11 (`yolo11n.pt`, `yolo11s.pt`, `yolo11m.pt`, `yolo11l.pt`, `yolo11x.pt` - mặc định: `yolo11n.pt`).
-- `-c`, `--conf`: Ngưỡng độ tin cậy confidence threshold (mặc định: `0.25`).
-- `--iou`: Ngưỡng NMS IoU threshold (mặc định: `0.45`).
-- `-b`, `--batch-size`: Kích thước batch khi suy luận ảnh (mặc định: `16`).
-- `-d`, `--device`: Thiết bị chạy (`cpu`, `cuda`, `0`, v.v.). Mặc định tự động chọn.
-- `-r`, `--recursive`: Cờ tìm kiếm ảnh đệ quy trong tất cả thư mục con.
-
-#### Ví dụ câu lệnh thực tế:
-
-```bash
-python -m src.shotlab.extractors.yolo_detect \
-    --input-dir test_yolo_img \
-    --output-json output_yolo/output.json \
+    --input-dir Keyframe/L21/output/keyframes/L21_V001 \
+    --output Keyframe/L21/output/keyframes_output/L21_V001.json \
     --model yolo11n.pt \
     --conf 0.25 \
     --batch-size 16
 ```
 
+#### Xử lý tất cả các thư mục con (chế độ `--batch` cho tập keyframes):
+```bash
+python -m src.shotlab.extractors.yolo_detect \
+    --input-dir Keyframe/L21/output/keyframes \
+    --output Keyframe/L21/output/keyframes_output \
+    --batch \
+    --model yolo11n.pt \
+    --conf 0.25 \
+    --batch-size 16
+```
+*(Nếu muốn lưu cả ảnh đã vẽ bounding box, thêm cờ `--save-images`)*
+
+#### Các tham số:
+- `-i`, `--input-dir` *(Bắt buộc)*: Đường dẫn đến thư mục chứa ảnh (hoặc thư mục chứa các thư mục con nếu dùng `--batch`).
+- `-o`, `--output` *(Bắt buộc)*: Đường dẫn file JSON đầu ra (hoặc thư mục đầu ra nếu dùng `--batch`).
+- `--batch`: Cờ xử lý duyệt qua tất cả các thư mục con (ví dụ `L21_V001`, `L21_V002`,...) và lưu kết quả theo tên từng thư mục vào `--output`.
+- `-m`, `--model`: Tên hoặc đường dẫn mô hình YOLOv11 (`yolo11n.pt`, `yolo11s.pt`, `yolo11m.pt`, `yolo11l.pt`, `yolo11x.pt` - mặc định: `yolo11n.pt`).
+- `-c`, `--conf`: Ngưỡng độ tin cậy confidence threshold (mặc định: `0.25`).
+- `--iou`: Ngưỡng NMS IoU threshold (mặc định: `0.45`).
+- `-b`, `--batch-size`: Kích thước batch khi suy luận ảnh (mặc định: `16`).
+- `-d`, `--device`: Thiết bị chạy (`cpu`, `cuda`, `0`, v.v.). Mặc định tự động chọn.
+- `--save-images`: Cờ lưu ảnh đã được vẽ bounding box.
+
 ### 2. Sử dụng trong mã nguồn Python (Python API)
 
 ```python
-from src.shotlab.extractors.yolo_detect import detect_directory
+from src.shotlab.extractors.yolo_detect import detect_batch_directories
 
-# Chạy nhận diện trên thư mục ảnh và ghi ra file JSON
-results = detect_directory(
-    input_dir="test_yolo_img",
-    output_json_path="output_yolo/output.json",
+# Xử lý tất cả các thư mục con trong keyframes và lưu vào keyframes_output
+summary = detect_batch_directories(
+    keyframes_root="Keyframe/L21/output/keyframes",
+    output_root="Keyframe/L21/output/keyframes_output",
     model_path="yolo11n.pt",
     conf_threshold=0.25,
     batch_size=16,
-    recursive=False
+    save_annotated=False  # Đặt True nếu muốn lưu cả ảnh có vẽ bounding box
 )
-
-print(f"Đã xử lý tổng cộng {results['total_images']} ảnh.")
 ```
 
 ### 3. Cấu trúc file JSON kết quả đầu ra
