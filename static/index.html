@@ -37,8 +37,8 @@
                 <span>🔍 Tìm kiếm Keyframe</span>
             </button>
             <button class="view-tab" id="tab-videos" onclick="switchView('videos')">
-                <span>🎬 Danh sách Video (L21, L22, L23)</span>
-                <span class="badge-count" id="video-total-badge">85 videos</span>
+                <span>🎬 Danh sách Video</span>
+                <span class="badge-count" id="video-total-badge">...</span>
             </button>
         </div>
 
@@ -47,13 +47,11 @@
             <div class="gallery-header">
                 <div class="gallery-title">
                     <h2>Danh sách Video & Keyframe Thumbnail Preview</h2>
-                    <p>Khám phá trực quan các video và keyframe đại diện thuộc các tập dữ liệu L21, L22, L23.</p>
+                    <p>Khám phá trực quan các video và keyframe đại diện trong hệ thống.</p>
                 </div>
                 <div class="dataset-pills" id="dataset-pills">
-                    <button class="pill-btn active" data-dataset="" onclick="filterVideoGallery('')">Tất cả (<span id="count-all">85</span>)</button>
-                    <button class="pill-btn" data-dataset="L21" onclick="filterVideoGallery('L21')">L21 (29)</button>
-                    <button class="pill-btn" data-dataset="L22" onclick="filterVideoGallery('L22')">L22 (31)</button>
-                    <button class="pill-btn" data-dataset="L23" onclick="filterVideoGallery('L23')">L23 (25)</button>
+                    <button class="pill-btn active" data-dataset="" onclick="filterVideoGallery('')">Tất cả (<span id="count-all">...</span>)</button>
+                    <!-- Dataset pills sẽ được tạo động bởi app.js từ API -->
                 </div>
             </div>
             <div id="video-cards-grid" class="video-cards-grid">

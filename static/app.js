@@ -90,6 +90,31 @@ async function loadVideosList() {
             if (countAll) {
                 countAll.innerText = data.videos.length;
             }
+
+            // Tạo dataset pills động từ prefix của video_id (L21, L22, L25...)
+            const datasetCounts = {};
+            data.videos.forEach(v => {
+                const prefix = v.match(/^(L\d+)/)?.[1];
+                if (prefix) datasetCounts[prefix] = (datasetCounts[prefix] || 0) + 1;
+            });
+
+            const pillsContainer = document.getElementById("dataset-pills");
+            if (pillsContainer) {
+                // Giữ nút "Tất cả", xóa pills cũ
+                pillsContainer.innerHTML = `
+                    <button class="pill-btn active" data-dataset="" onclick="filterVideoGallery('')">
+                        Tất cả (<span id="count-all">${data.videos.length}</span>)
+                    </button>
+                `;
+                Object.entries(datasetCounts).sort().forEach(([ds, count]) => {
+                    const btn = document.createElement("button");
+                    btn.className = "pill-btn";
+                    btn.setAttribute("data-dataset", ds);
+                    btn.setAttribute("onclick", `filterVideoGallery('${ds}')`);
+                    btn.textContent = `${ds} (${count})`;
+                    pillsContainer.appendChild(btn);
+                });
+            }
         }
     } catch (err) {
         console.error("Failed to load videos:", err);

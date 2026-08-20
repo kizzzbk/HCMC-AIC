@@ -1,30 +1,33 @@
 import torch
 import numpy as np
+import open_clip
 from typing import Optional, Dict, Any
 from transformers import AutoProcessor, AutoModel
-from sentence_transformers import SentenceTransformer
 
 from config import (
     OPENCLIP_MODEL_NAME,
+    OPENCLIP_PRETRAINED,
     SIGLIP_MODEL_NAME,
     CAPTION_MODEL_NAME,
 )
 
 class OpenCLIPEncoder:
-    """Exact OpenCLIP implementation from Download_Keyframe.ipynb (Cell 9 & 12)"""
-    def __init__(self, model_name: str = OPENCLIP_MODEL_NAME):
+    """OpenCLIP text encoder — dùng đúng model/pretrained khi build FAISS index."""
+    def __init__(self, model_name: str = OPENCLIP_MODEL_NAME, pretrained: str = OPENCLIP_PRETRAINED):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        print(f"[Encoder] Loading OpenCLIP model: {model_name} on {self.device}...")
-        self.model = SentenceTransformer(model_name, device=self.device)
+        print(f"[Encoder] Loading OpenCLIP model: {model_name} pretrained={pretrained} on {self.device}...")
+        self.model, _, _ = open_clip.create_model_and_transforms(model_name, pretrained=pretrained)
+        self.tokenizer = open_clip.get_tokenizer(model_name)
+        self.model = self.model.to(self.device)
         self.model.eval()
         print("[Encoder] OpenCLIP loaded successfully.")
 
     def encode_text(self, text: str) -> np.ndarray:
+        tokens = self.tokenizer([text]).to(self.device)
         with torch.no_grad():
-            emb = self.model.encode(text, convert_to_numpy=True).astype("float32")
-            if emb.ndim == 1:
-                emb = emb.reshape(1, -1)
-            return emb
+            emb = self.model.encode_text(tokens)
+            emb = emb / emb.norm(dim=-1, keepdim=True)  # normalize giống luc build index
+            return emb.cpu().numpy().astype("float32")
 
 
 class SigLIPEncoder:
@@ -38,11 +41,12 @@ class SigLIPEncoder:
         print("[Encoder] SigLIP2 loaded successfully.")
 
     def encode_text(self, text: str) -> np.ndarray:
-        inputs = self.processor(text=text, return_tensors="pt").to(self.device)
-        text_inputs = {k: v for k, v in inputs.items() if k in ['input_ids', 'attention_mask']}
+        inputs = self.processor(text=[text], return_tensors="pt", padding=True).to(self.device)
         with torch.no_grad():
-            text_encoder_output = self.model.text_model(**text_inputs)
-            text_features = text_encoder_output.pooler_output
+            # Dùng get_text_features() — có projection layer, khớp với get_image_features() khi build FAISS
+            text_features = self.model.get_text_features(**inputs)
+            # Normalize L2 — giống code embed ảnh: features / features.norm(p=2, dim=-1, keepdim=True)
+            text_features = text_features / text_features.norm(p=2, dim=-1, keepdim=True)
         return text_features.cpu().numpy().astype("float32")
 
 

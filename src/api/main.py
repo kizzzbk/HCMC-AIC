@@ -227,7 +227,7 @@ def serve_media(path: str):
     frame_name = Path(path).name
     raw_root = KEYFRAME_ROOTS.get(video_id.split("_")[0], KEYFRAMES_DIR) if video_id else KEYFRAMES_DIR
     expected_root = raw_root[0] if isinstance(raw_root, list) else raw_root
-    expected_path = f"{expected_root}\\{path}"
+    expected_path = f"{expected_root}/{path}"
 
     print(f"[Missing Keyframe] video_id={video_id}, frame_name={frame_name}, expected_path={expected_path}")
 

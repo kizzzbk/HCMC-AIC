@@ -5,7 +5,11 @@ Source of truth: Download_Keyframe.ipynb (Cell 4 & Cell 5)
 import os
 from pathlib import Path
 from typing import Optional, List
-from config import BASE_DIR, KEYFRAME_ROOTS, KEYFRAMES_DIR
+from config import BASE_DIR, KEYFRAME_ROOTS
+
+# Đọc động từ env, không dùng giá trị cứng lúc import
+def _get_keyframes_dir() -> str:
+    return os.getenv("KEYFRAMES_DIR", str(BASE_DIR / "keyframes"))
 
 
 def get_folder_name(image_id: str) -> str:
@@ -30,13 +34,25 @@ def get_folder_name(image_id: str) -> str:
     return ""
 
 
-import functools
 from typing import Optional, List, Union
 
+# Cache chỉ lưu kết quả TÌM THẤY (không cache None)
+# → nếu file chưa có lúc đầu, lần sau vẫn tìm lại được
+_resolve_cache: dict = {}
 
-@functools.lru_cache(maxsize=16384)
+
 def _cached_resolve_keyframe_path(clean_id_or_path: str) -> Optional[Path]:
-    """Internal cached resolver implementation."""
+    """Resolver có cache thủ công — chỉ cache kết quả hợp lệ, bỏ qua None."""
+    if clean_id_or_path in _resolve_cache:
+        return _resolve_cache[clean_id_or_path]
+    result = _do_resolve(clean_id_or_path)
+    if result is not None:
+        _resolve_cache[clean_id_or_path] = result  # chỉ lưu khi tìm thấy
+    return result
+
+
+def _do_resolve(clean_id_or_path: str) -> Optional[Path]:
+    """Internal resolver implementation."""
     # Sanitize path to prevent path traversal
     clean = str(clean_id_or_path).replace("\\", "/").strip().lstrip("/")
     if ".." in clean:
@@ -76,7 +92,7 @@ def _cached_resolve_keyframe_path(clean_id_or_path: str) -> Optional[Path]:
     candidate_roots.append(BASE_DIR / prefix / "output" / "keyframes")
     candidate_roots.append(BASE_DIR / prefix / "keyframes")
     candidate_roots.append(BASE_DIR / prefix)
-    candidate_roots.append(Path(KEYFRAMES_DIR))
+    candidate_roots.append(Path(_get_keyframes_dir()))  # đọc động từ env
     candidate_roots.append(BASE_DIR / "keyframes")
     candidate_roots.append(BASE_DIR)
 
@@ -124,6 +140,11 @@ def _cached_resolve_keyframe_path(clean_id_or_path: str) -> Optional[Path]:
                 return p
 
     return None
+
+
+def clear_resolve_cache():
+    """Xóa toàn bộ cache resolver — gọi sau khi giải nén keyframes."""
+    _resolve_cache.clear()
 
 
 def resolve_keyframe_image_path(image_id_or_path: str) -> Optional[Path]:

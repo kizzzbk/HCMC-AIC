@@ -48,7 +48,8 @@ KEYFRAME_ROOTS = {
 }
 
 # Model Names / Configurations (Exact from Download_Keyframe.ipynb Cell 9)
-OPENCLIP_MODEL_NAME = os.getenv("OPENCLIP_MODEL_NAME", "clip-ViT-B-32")
+OPENCLIP_MODEL_NAME = os.getenv("OPENCLIP_MODEL_NAME", "ViT-B-32")
+OPENCLIP_PRETRAINED = os.getenv("OPENCLIP_PRETRAINED", "laion2b_s34b_b79k")
 SIGLIP_MODEL_NAME = os.getenv("SIGLIP_MODEL_NAME", "google/siglip2-base-patch16-naflex")
 CAPTION_MODEL_NAME = os.getenv("CAPTION_MODEL_NAME", "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
