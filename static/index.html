@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCMC AI 2026 - Video Keyframe Retrieval System</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <div class="logo-icon">🎬</div>
+            <div class="brand-text">
+                <h1>HCMC AI 2026</h1>
+                <span>Multi-modal Hybrid Keyframe Retrieval</span>
+            </div>
+        </div>
+        <div class="nav-status">
+            <div class="status-badge" id="system-status">
+                <span class="status-dot"></span>
+                <span id="status-text">Đang kết nối...</span>
+            </div>
+            <div class="session-badge">
+                <span class="label">Session:</span>
+                <span id="session-id">HCMC_AI_TEAM_01</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Application Container -->
+    <main class="container">
+        <!-- View Switcher Tabs -->
+        <div class="view-switcher">
+            <button class="view-tab active" id="tab-search" onclick="switchView('search')">
+                <span>🔍 Tìm kiếm Keyframe</span>
+            </button>
+            <button class="view-tab" id="tab-videos" onclick="switchView('videos')">
+                <span>🎬 Danh sách Video (L21, L22, L23)</span>
+                <span class="badge-count" id="video-total-badge">85 videos</span>
+            </button>
+        </div>
+
+        <!-- Video Gallery View Section -->
+        <section id="video-gallery-section" class="video-gallery-section glass-card" style="display: none;">
+            <div class="gallery-header">
+                <div class="gallery-title">
+                    <h2>Danh sách Video & Keyframe Thumbnail Preview</h2>
+                    <p>Khám phá trực quan các video và keyframe đại diện thuộc các tập dữ liệu L21, L22, L23.</p>
+                </div>
+                <div class="dataset-pills" id="dataset-pills">
+                    <button class="pill-btn active" data-dataset="" onclick="filterVideoGallery('')">Tất cả (<span id="count-all">85</span>)</button>
+                    <button class="pill-btn" data-dataset="L21" onclick="filterVideoGallery('L21')">L21 (29)</button>
+                    <button class="pill-btn" data-dataset="L22" onclick="filterVideoGallery('L22')">L22 (31)</button>
+                    <button class="pill-btn" data-dataset="L23" onclick="filterVideoGallery('L23')">L23 (25)</button>
+                </div>
+            </div>
+            <div id="video-cards-grid" class="video-cards-grid">
+                <div class="empty-state">
+                    <div class="empty-icon">⏳</div>
+                    <h3>Đang tải danh sách video & thumbnail...</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search View Container -->
+        <div id="search-view-container">
+        <!-- Search & Control Panel -->
+        <section class="search-panel glass-card">
+            <form id="search-form" onsubmit="handleSearch(event)">
+                <div class="search-input-group">
+                    <div class="input-icon">🔍</div>
+                    <input 
+                        type="text" 
+                        id="query-input" 
+                        placeholder="Nhập truy vấn tiếng Việt hoặc tiếng Anh (vd: một người đàn ông mặc áo đỏ cạnh xe hơi...)" 
+                        autocomplete="off"
+                        required
+                    />
+                    <button type="submit" class="btn btn-primary" id="search-btn">
+                        <span>Tìm kiếm</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="clearSearch()">
+                        <span>Xóa</span>
+                    </button>
+                </div>
+
+                <!-- Filters & Configuration Row -->
+                <div class="filters-row">
+                    <div class="filter-item">
+                        <label for="top-k-select">Top-K hiển thị:</label>
+                        <select id="top-k-select" onchange="onTopKChange()">
+                            <option value="12">12 frames</option>
+                            <option value="20" selected>20 frames</option>
+                            <option value="40">40 frames</option>
+                            <option value="60">60 frames</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-item">
+                        <label for="video-filter">Lọc theo Video ID:</label>
+                        <select id="video-filter">
+                            <option value="">Tất cả video</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-item">
+                        <label for="fusion-mode">Chế độ Fusion:</label>
+                        <select id="fusion-mode">
+                            <option value="rrf" selected>RRF (SigLIP2 + OpenCLIP + Caption)</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Search Metadata & Stats Bar -->
+        <section class="stats-bar" id="stats-bar" style="display: none;">
+            <div class="stats-left">
+                <span>Tìm thấy <strong id="total-count">0</strong> kết quả cho: "<em id="current-query-display"></em>"</span>
+                <span class="time-badge">⚡ <span id="query-time">0</span> ms</span>
+            </div>
+            <div class="stats-right">
+                <span id="page-indicator">Hiển thị 1 - 20</span>
+            </div>
+        </section>
+
+        <!-- Results Grid -->
+        <section class="results-container">
+            <div id="results-grid" class="results-grid">
+                <!-- Welcome Empty State -->
+                <div class="empty-state">
+                    <div class="empty-icon">🎯</div>
+                    <h3>Sẵn sàng truy vấn Video Keyframe</h3>
+                    <p>Nhập mô tả hành động, đối tượng hoặc bối cảnh để tìm kiếm keyframe chính xác.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Top-K Pagination -->
+        <section class="pagination-panel" id="pagination-panel" style="display: none;">
+            <button class="btn btn-outline" id="load-more-btn" onclick="loadNextTopK()">
+                <span>Tải thêm kết quả (Next Top-K) ⬇</span>
+            </button>
+        </section>
+        </div> <!-- End of search-view-container -->
+    </main>
+
+    <!-- Neighbor Frames Modal -->
+    <div id="neighbor-modal" class="modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h3>Khung hình lân cận (±5 Frames Timeline)</h3>
+                    <span id="neighbor-subtitle" class="subtitle">Video: L21_V001 | Frame idx: 12</span>
+                </div>
+                <button class="modal-close" onclick="closeNeighborModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="timeline-container" id="timeline-list">
+                    <!-- Neighbor frames will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submission Modal -->
+    <div id="submit-modal" class="modal">
+        <div class="modal-content glass-card modal-sm">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h3>Xác nhận nộp bài (BTC Submit)</h3>
+                </div>
+                <button class="modal-close" onclick="closeSubmitModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="submit-modal-body">
+                <!-- Submission confirmation details -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeSubmitModal()">Hủy</button>
+                <button class="btn btn-success" id="confirm-submit-btn" onclick="executeSubmission()">
+                    <span>Xác nhận Nộp</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast"></div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2822 @@
+{
+  "model_path": "yolo11n.pt",
+  "conf_threshold": 0.5,
+  "iou_threshold": 0.45,
+  "total_images": 298,
+  "results": [
+    {
+      "image_name": "L24_V036_transnetv2_0001_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0001_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0001_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0001_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0001_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0001_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0001_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0001_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0001_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0001_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0001_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0001_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_00.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_01.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_02.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_03.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_04.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_05.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_06.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_07.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_08.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_09.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_10.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_11.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_12.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_12.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_12.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_13.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_13.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_13.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_14.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_14.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_14.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_15.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_15.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_15.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_16.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_16.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_16.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_17.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_17.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_17.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_18.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_18.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_18.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_19.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_19.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_19.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_20.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_20.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_20.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_21.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_21.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_21.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_22.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_22.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_22.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_23.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_23.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_23.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_24.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_24.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_24.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_25.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_25.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_25.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_26.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_26.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_26.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_27.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_27.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_27.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_28.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_28.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_28.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_29.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_29.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_29.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_30.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_30.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_30.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_31.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_31.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_31.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_32.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_32.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_32.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_33.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_33.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_33.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_34.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_34.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_34.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_35.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_35.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_35.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_36.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_36.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_36.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_37.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_37.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_37.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_38.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_38.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_38.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_39.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_39.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_39.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_40.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_40.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_40.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "teddy bear",
+          "class_count": 2
+        },
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_41.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_41.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_41.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "teddy bear",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_42.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_42.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_42.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_43.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_43.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_43.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_44.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_44.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_44.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0002_45.jpg",
+      "relative_path": "L24_V036_transnetv2_0002_45.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0002_45.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "chair",
+          "class_count": 2
+        },
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0003_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0003_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0003_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0003_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0003_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0003_01.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0003_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0003_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0003_02.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0004_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0004_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0004_00.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 3
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0004_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0004_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0004_01.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0004_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0004_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0004_02.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0004_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0004_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0004_03.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 3
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0005_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0005_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0005_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0005_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0005_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0005_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0005_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0005_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0005_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0005_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0005_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0005_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_07.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_08.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_09.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_10.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_11.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_12.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_12.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_12.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0006_13.jpg",
+      "relative_path": "L24_V036_transnetv2_0006_13.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0006_13.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0007_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0007_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0007_00.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        },
+        {
+          "class_name": "teddy bear",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0007_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0007_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0007_01.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0007_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0007_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0007_02.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0007_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0007_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0007_03.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0007_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0007_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0007_04.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_01.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_02.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_03.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_04.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_07.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_08.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_09.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_10.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_11.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_12.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_12.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_12.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_13.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_13.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_13.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_14.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_14.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_14.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_15.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_15.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_15.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_16.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_16.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_16.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_17.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_17.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_17.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_18.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_18.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_18.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "teddy bear",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_19.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_19.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_19.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "chair",
+          "class_count": 1
+        },
+        {
+          "class_name": "teddy bear",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_20.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_20.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_20.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "teddy bear",
+          "class_count": 1
+        },
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_21.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_21.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_21.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_22.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_22.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_22.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_23.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_23.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_23.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "teddy bear",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_24.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_24.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_24.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_25.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_25.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_25.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_26.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_26.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_26.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        },
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_27.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_27.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_27.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        },
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_28.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_28.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_28.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 3
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_29.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_29.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_29.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_30.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_30.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_30.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_31.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_31.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_31.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_32.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_32.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_32.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_33.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_33.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_33.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0008_34.jpg",
+      "relative_path": "L24_V036_transnetv2_0008_34.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0008_34.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_07.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_08.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_09.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_10.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0009_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0009_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0009_11.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0010_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0010_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0010_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "teddy bear",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0010_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0010_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0010_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0010_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0010_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0010_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0010_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0010_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0010_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0010_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0010_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0010_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0010_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0010_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0010_05.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_03.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_07.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_08.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_09.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_10.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_11.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_12.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_12.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_12.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0011_13.jpg",
+      "relative_path": "L24_V036_transnetv2_0011_13.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0011_13.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0012_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0012_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0012_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0012_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0012_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0012_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0012_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0012_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0012_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0012_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0012_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0012_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0012_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0012_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0012_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_05.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_07.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_08.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_09.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_10.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0013_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0013_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0013_11.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_02.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_04.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_06.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_07.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_08.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_09.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0014_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0014_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0014_10.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0015_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0015_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0015_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0015_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0015_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0015_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0015_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0015_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0015_02.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0015_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0015_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0015_03.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0016_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0016_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0016_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0016_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0016_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0016_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0016_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0016_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0016_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0017_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0017_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0017_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0017_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0017_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0017_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0017_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0017_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0017_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0017_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0017_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0017_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0018_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0018_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0018_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0018_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0018_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0018_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0018_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0018_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0018_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0018_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0018_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0018_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0018_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0018_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0018_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0019_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0019_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0019_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0019_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0019_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0019_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0019_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0019_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0019_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0019_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0019_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0019_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0019_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0019_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0019_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_07.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_08.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_09.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_10.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_11.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_12.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_12.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_12.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_13.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_13.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_13.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_14.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_14.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_14.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_15.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_15.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_15.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_16.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_16.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_16.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_17.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_17.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_17.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_18.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_18.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_18.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_19.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_19.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_19.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_20.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_20.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_20.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_21.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_21.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_21.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_22.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_22.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_22.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_23.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_23.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_23.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_24.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_24.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_24.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_25.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_25.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_25.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_26.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_26.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_26.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_27.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_27.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_27.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_28.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_28.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_28.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_29.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_29.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_29.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_30.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_30.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_30.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_31.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_31.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_31.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_32.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_32.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_32.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_33.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_33.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_33.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_34.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_34.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_34.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_35.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_35.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_35.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_36.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_36.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_36.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_37.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_37.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_37.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_38.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_38.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_38.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_39.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_39.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_39.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_40.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_40.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_40.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_41.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_41.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_41.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_42.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_42.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_42.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_43.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_43.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_43.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_44.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_44.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_44.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_45.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_45.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_45.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_46.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_46.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_46.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_47.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_47.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_47.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_48.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_48.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_48.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_49.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_49.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_49.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_50.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_50.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_50.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0020_51.jpg",
+      "relative_path": "L24_V036_transnetv2_0020_51.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0020_51.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0021_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0021_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0021_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0021_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0021_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0021_01.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0021_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0021_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0021_02.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0021_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0021_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0021_03.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0021_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0021_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0021_04.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        },
+        {
+          "class_name": "dog",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0021_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0021_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0021_05.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_00.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_01.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_02.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_03.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_04.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_05.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_06.jpg",
+      "detections_count": 5,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 4
+        },
+        {
+          "class_name": "chair",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_07.jpg",
+      "detections_count": 4,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 3
+        },
+        {
+          "class_name": "frisbee",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_08.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_09.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_10.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_11.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0022_12.jpg",
+      "relative_path": "L24_V036_transnetv2_0022_12.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0022_12.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_00.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_01.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_03.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_04.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_05.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_06.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_07.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_07.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_07.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_08.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_08.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_08.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_09.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_09.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_09.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_10.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_10.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_10.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0023_11.jpg",
+      "relative_path": "L24_V036_transnetv2_0023_11.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0023_11.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "boat",
+          "class_count": 1
+        },
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0024_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0024_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0024_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0024_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0024_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0024_01.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0024_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0024_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0024_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0024_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0024_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0024_03.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0024_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0024_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0024_04.jpg",
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 2
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0025_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0025_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0025_00.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 3
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0025_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0025_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0025_01.jpg",
+      "detections_count": 6,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 5
+        },
+        {
+          "class_name": "dog",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0025_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0025_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0025_02.jpg",
+      "detections_count": 3,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 3
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0025_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0025_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0025_03.jpg",
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_name": "person",
+          "class_count": 1
+        }
+      ]
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0026_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0026_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0026_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0026_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0026_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0026_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0026_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0026_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0026_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_00.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_00.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_00.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_01.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_01.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_01.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_02.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_02.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_02.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_03.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_03.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_03.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_04.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_04.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_04.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_05.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_05.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_05.jpg",
+      "detections_count": 0,
+      "detections": []
+    },
+    {
+      "image_name": "L24_V036_transnetv2_0027_06.jpg",
+      "relative_path": "L24_V036_transnetv2_0027_06.jpg",
+      "absolute_path": "/home/fw2025/Documents/HCMC-AIC/combined_raw_keyframes/keyframes/L24_V036/L24_V036_transnetv2_0027_06.jpg",
+      "detections_count": 0,
+      "detections": []
+    }
+  ]
+}

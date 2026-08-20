@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Data and Keyframe directories (Gigabytes of images)
+L21/
+L22/
+L23/
+L24/
+L25*/
+L26*/
+L27*/
+L28*/
+L29*/
+L30*/
+keyframes/
+data/**/vector_batch*.npy
+data/**/vector_batch*.index
+vectordb2_output/
+
+# Archive files
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# Heavy Vector Indices and Large Database files (>100MB)
+Faiss/*.bin
+Faiss/*.index
+metadata.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Logs and environment
+*.log
+.env
