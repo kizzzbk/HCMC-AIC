@@ -45,16 +45,16 @@ def startup_event():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"[Startup] Backend server using device: {device}")
     
-    # 2. Load SigLIP Model
-    model_name = "google/siglip-base-patch16-224"
-    print(f"[Startup] Loading SigLIP model '{model_name}'...")
+    # 2. Load SigLIP2 Model
+    model_name = "google/siglip2-base-patch16-naflex"
+    print(f"[Startup] Loading SigLIP2 model '{model_name}'...")
     try:
         processor = AutoProcessor.from_pretrained(model_name)
         model = AutoModel.from_pretrained(model_name).to(device)
         model.eval()
-        print("[Startup] SigLIP model loaded successfully.")
+        print("[Startup] SigLIP2 model loaded successfully.")
     except Exception as e:
-        print(f"[Startup] Error loading SigLIP model: {e}")
+        print(f"[Startup] Error loading SigLI2 model: {e}")
     
     # 3. Load DB Metadata
     if not CSV_PATH.exists():
