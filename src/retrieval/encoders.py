@@ -3,6 +3,7 @@ import numpy as np
 import open_clip
 from typing import Optional, Dict, Any
 from transformers import AutoProcessor, AutoModel
+from sentence_transformers import SentenceTransformer
 
 from config import (
     OPENCLIP_MODEL_NAME,
