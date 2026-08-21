@@ -46,6 +46,11 @@ class SigLIPEncoder:
         with torch.no_grad():
             # Dùng get_text_features() — có projection layer, khớp với get_image_features() khi build FAISS
             text_features = self.model.get_text_features(**inputs)
+            if hasattr(text_features, "pooler_output") and text_features.pooler_output is not None:
+                text_features = text_features.pooler_output
+            elif hasattr(text_features, "text_embeds") and text_features.text_embeds is not None:
+                text_features = text_features.text_embeds
+            
             # Normalize L2 — giống code embed ảnh: features / features.norm(p=2, dim=-1, keepdim=True)
             text_features = text_features / text_features.norm(p=2, dim=-1, keepdim=True)
         return text_features.cpu().numpy().astype("float32")
