@@ -22,6 +22,7 @@ class MetadataDB:
                 # Ensure fast lookup indexes
                 cursor.execute("CREATE INDEX IF NOT EXISTS idx_keyframes_video_frame ON keyframes(video_id, frame_idx);")
                 cursor.execute("CREATE INDEX IF NOT EXISTS idx_keyframes_keyframe_id ON keyframes(keyframe_id);")
+                cursor.execute("CREATE INDEX IF NOT EXISTS idx_keyframes_global_id ON keyframes(global_id);")
             else:
                 self.table_name = "metadata"
                 cursor.execute("""
@@ -47,7 +48,7 @@ class MetadataDB:
             cursor = conn.cursor()
             if self.table_name == "keyframes":
                 cursor.execute("""
-                    SELECT rowid AS global_id,
+                    SELECT global_id,
                            keyframe_id AS frame_id,
                            video_id,
                            shot_id,
@@ -59,7 +60,7 @@ class MetadataDB:
                            '' AS object_detail,
                            '' AS caption
                     FROM keyframes
-                    WHERE rowid = ?
+                    WHERE global_id = ?
                 """, (global_id,))
             else:
                 cursor.execute("SELECT * FROM metadata WHERE global_id = ?", (global_id,))
@@ -76,7 +77,7 @@ class MetadataDB:
             cursor = conn.cursor()
             if self.table_name == "keyframes":
                 query = f"""
-                    SELECT rowid AS global_id,
+                    SELECT global_id,
                            keyframe_id AS frame_id,
                            video_id,
                            shot_id,
@@ -88,7 +89,7 @@ class MetadataDB:
                            '' AS object_detail,
                            '' AS caption
                     FROM keyframes
-                    WHERE rowid IN ({placeholders})
+                    WHERE global_id IN ({placeholders})
                 """
             else:
                 query = f"SELECT * FROM metadata WHERE global_id IN ({placeholders})"
@@ -108,7 +109,7 @@ class MetadataDB:
             cursor = conn.cursor()
             if self.table_name == "keyframes":
                 cursor.execute("""
-                    SELECT rowid AS global_id, keyframe_id AS frame_id, video_id, shot_id, ordinal, frame_idx, timestamp, image_path, '' AS objects_tag, '' AS object_detail, '' AS caption
+                    SELECT global_id, keyframe_id AS frame_id, video_id, shot_id, ordinal, frame_idx, timestamp, image_path, '' AS objects_tag, '' AS object_detail, '' AS caption
                     FROM keyframes
                     WHERE video_id = ? AND frame_idx < ?
                     ORDER BY frame_idx DESC LIMIT ?
@@ -116,14 +117,14 @@ class MetadataDB:
                 before = list(reversed(cursor.fetchall()))
 
                 cursor.execute("""
-                    SELECT rowid AS global_id, keyframe_id AS frame_id, video_id, shot_id, ordinal, frame_idx, timestamp, image_path, '' AS objects_tag, '' AS object_detail, '' AS caption
+                    SELECT global_id, keyframe_id AS frame_id, video_id, shot_id, ordinal, frame_idx, timestamp, image_path, '' AS objects_tag, '' AS object_detail, '' AS caption
                     FROM keyframes
-                    WHERE rowid = ?
+                    WHERE global_id = ?
                 """, (global_id,))
                 center = cursor.fetchall()
 
                 cursor.execute("""
-                    SELECT rowid AS global_id, keyframe_id AS frame_id, video_id, shot_id, ordinal, frame_idx, timestamp, image_path, '' AS objects_tag, '' AS object_detail, '' AS caption
+                    SELECT global_id, keyframe_id AS frame_id, video_id, shot_id, ordinal, frame_idx, timestamp, image_path, '' AS objects_tag, '' AS object_detail, '' AS caption
                     FROM keyframes
                     WHERE video_id = ? AND frame_idx > ?
                     ORDER BY frame_idx ASC LIMIT ?
@@ -180,7 +181,7 @@ class MetadataDB:
 
                 if tbl == "keyframes":
                     cursor.execute(
-                        "SELECT rowid AS global_id, keyframe_id AS frame_id, frame_idx, timestamp, image_path FROM keyframes "
+                        "SELECT global_id, keyframe_id AS frame_id, frame_idx, timestamp, image_path FROM keyframes "
                         "WHERE video_id = ? ORDER BY frame_idx ASC LIMIT 4",
                         (vid,)
                     )
