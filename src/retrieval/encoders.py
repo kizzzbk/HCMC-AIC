@@ -44,9 +44,16 @@ class SigLIPEncoder:
     def encode_text(self, text: str) -> np.ndarray:
         inputs = self.processor(text=[text], return_tensors="pt", padding=True).to(self.device)
         with torch.no_grad():
-            # get_text_features() trả về plain tensor (đã qua projection layer)
-            # khớp với get_image_features() dùng khi build FAISS index
             text_features = self.model.get_text_features(**inputs)
+            
+            # Khác với CLIP, SigLIP get_text_features trả về BaseModelOutputWithPooling
+            if hasattr(text_features, "pooler_output") and text_features.pooler_output is not None:
+                text_features = text_features.pooler_output
+            elif hasattr(text_features, "text_embeds") and text_features.text_embeds is not None:
+                text_features = text_features.text_embeds
+            elif isinstance(text_features, tuple):
+                text_features = text_features[0]
+
             # Normalize L2 — giống code embed ảnh: features / features.norm(p=2, dim=-1, keepdim=True)
             text_features = text_features / text_features.norm(p=2, dim=-1, keepdim=True)
         return text_features.cpu().numpy().astype("float32")
